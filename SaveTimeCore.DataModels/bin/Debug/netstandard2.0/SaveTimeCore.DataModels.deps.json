@@ -10,7 +10,8 @@
       "SaveTimeCore.DataModels/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "SaveTimeCore.AbstractModels": "1.0.0"
+          "SaveTimeCore.AbstractModels": "1.0.0",
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
           "SaveTimeCore.DataModels.dll": {}
@@ -20,6 +21,14 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.ComponentModel.Annotations/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "4.2.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "SaveTimeCore.AbstractModels/1.0.0": {
@@ -48,6 +57,13 @@
       "sha512": "sha512-D+QOWR9KAjhDIgPC0EYu7pQ24J4HPyScRr+chpPLgV8PqjFTzXHHT/z5bcNaugU5/YqrVwQHlntIs6DQanByOw==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
     },
     "SaveTimeCore.AbstractModels/1.0.0": {
       "type": "project",

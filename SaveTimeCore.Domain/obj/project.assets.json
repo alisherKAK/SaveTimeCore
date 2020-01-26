@@ -474,7 +474,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SaveTimeCore.AbstractModels": "1.0.0"
+          "SaveTimeCore.AbstractModels": "1.0.0",
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
           "bin/placeholder/SaveTimeCore.DataModels.dll": {}

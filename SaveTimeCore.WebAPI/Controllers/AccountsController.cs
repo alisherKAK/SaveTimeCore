@@ -15,10 +15,12 @@ namespace SaveTimeCore.WebAPI.Controllers
     {
         private readonly IService<Account, AccountDTO, AccountResource> _service;
         private readonly IMapper _mapper;
-        public AccountsController(IService<Account, AccountDTO, AccountResource> service, IMapper mapper)
+        private readonly IEncrypter _encrypter;
+        public AccountsController(IService<Account, AccountDTO, AccountResource> service, IMapper mapper, IEncrypter encrypter)
         {
             _service = service;
             _mapper = mapper;
+            _encrypter = encrypter;
         }
 
         [HttpGet]
@@ -40,6 +42,7 @@ namespace SaveTimeCore.WebAPI.Controllers
             }
 
             var accountDto = _mapper.Map<AccountDTO>(accountResource);
+            accountDto.Password = _encrypter.HashPassword(accountDto.Password);
             _service.Add(accountDto);
 
             return Ok();

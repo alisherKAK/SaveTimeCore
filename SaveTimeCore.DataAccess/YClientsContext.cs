@@ -38,5 +38,7 @@ namespace SaveTime.DataAccess
 
         public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<BarberService> BarberServices { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<AccountRole> AccountRoles { get; set; }
     }
 }
