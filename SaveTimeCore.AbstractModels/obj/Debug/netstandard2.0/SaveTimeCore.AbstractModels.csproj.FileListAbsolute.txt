@@ -1,0 +1,7 @@
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.deps.json
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.pdb
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\obj\Debug\netstandard2.0\SaveTimeCore.AbstractModels.AssemblyInfoInputs.cache
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\obj\Debug\netstandard2.0\SaveTimeCore.AbstractModels.AssemblyInfo.cs
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\obj\Debug\netstandard2.0\SaveTimeCore.AbstractModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.AbstractModels\obj\Debug\netstandard2.0\SaveTimeCore.AbstractModels.pdb

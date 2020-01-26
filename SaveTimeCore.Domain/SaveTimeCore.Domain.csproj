@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaveTimeCore.AbstractModels\SaveTimeCore.AbstractModels.csproj" />
+    <ProjectReference Include="..\SaveTimeCore.DataModels\SaveTimeCore.DataModels.csproj" />
+    <ProjectReference Include="..\SaveTimeCore.Services\SaveTimeCore.Services.csproj" />
+  </ItemGroup>
+
+</Project>

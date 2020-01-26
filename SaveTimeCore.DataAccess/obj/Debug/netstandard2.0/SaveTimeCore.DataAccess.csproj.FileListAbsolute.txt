@@ -1,0 +1,13 @@
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.DataAccess.deps.json
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.DataAccess.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\obj\Debug\netstandard2.0\SaveTimeCore.DataAccess.AssemblyInfoInputs.cache
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\obj\Debug\netstandard2.0\SaveTimeCore.DataAccess.AssemblyInfo.cs
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\obj\Debug\netstandard2.0\SaveTimeCore.DataAccess.csprojAssemblyReference.cache
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.DataAccess.pdb
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.DataModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.pdb
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\bin\Debug\netstandard2.0\SaveTimeCore.DataModels.pdb
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\obj\Debug\netstandard2.0\SaveTimeCore.DataAccess.csproj.CopyComplete
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\obj\Debug\netstandard2.0\SaveTimeCore.DataAccess.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataAccess\obj\Debug\netstandard2.0\SaveTimeCore.DataAccess.pdb

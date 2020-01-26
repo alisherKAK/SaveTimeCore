@@ -1,0 +1,11 @@
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\bin\Debug\netstandard2.0\SaveTimeCore.DataModels.deps.json
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\bin\Debug\netstandard2.0\SaveTimeCore.DataModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\bin\Debug\netstandard2.0\SaveTimeCore.DataModels.pdb
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\bin\Debug\netstandard2.0\SaveTimeCore.AbstractModels.pdb
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\obj\Debug\netstandard2.0\SaveTimeCore.DataModels.csprojAssemblyReference.cache
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\obj\Debug\netstandard2.0\SaveTimeCore.DataModels.AssemblyInfoInputs.cache
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\obj\Debug\netstandard2.0\SaveTimeCore.DataModels.AssemblyInfo.cs
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\obj\Debug\netstandard2.0\SaveTimeCore.DataModels.csproj.CopyComplete
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\obj\Debug\netstandard2.0\SaveTimeCore.DataModels.dll
+S:\VisualStudio\Project\SaveTimeCore\SaveTimeCore.DataModels\obj\Debug\netstandard2.0\SaveTimeCore.DataModels.pdb
