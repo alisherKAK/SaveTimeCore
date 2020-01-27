@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SaveTimeCore.AbstractModels;
@@ -22,6 +20,11 @@ namespace SaveTimeCore.Web.Client.Controllers
             _encrypter = encrypter;
         }
 
+        public string GetAllRecords()
+        {
+            var result = _client.GetStringAsync("api/records").Result;
+            return result;
+        }
         public IActionResult SignUp()
         {
             return Redirect("/site/vertical/pages-register.html");
@@ -74,8 +77,13 @@ namespace SaveTimeCore.Web.Client.Controllers
             var accounts = JsonConvert.DeserializeObject<List<AccountResource>>(result);
             var account = accounts.Where(a => a.Login == clientEnterViewModel.Login).FirstOrDefault();
 
+            result = _client.GetStringAsync("api/clients").Result;
+            var clients = JsonConvert.DeserializeObject<List<ClientResource>>(result);
+            var client = clients.Where(c => c.AccountId == account.Id).FirstOrDefault();
+
             if(_encrypter.ValidatePassword(clientEnterViewModel.Password, account.Password))
             {
+                Response.Cookies.Append("clientId", client.Id.ToString());
                 return Redirect("/site/vertical/index.html");
             }
 
