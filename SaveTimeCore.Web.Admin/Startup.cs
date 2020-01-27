@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SaveTimeCore.AbstractModels;
+using SaveTimeCore.Services;
 using SaveTimeCore.Web.Admin.Api;
 
 namespace SaveTimeCore.Web.Admin
@@ -26,7 +28,8 @@ namespace SaveTimeCore.Web.Admin
         {
             services.AddControllersWithViews();
 
-            services.AddSingleton<HttpClient>(i => ApiInitializer.Initialize());
+            services.AddTransient<HttpClient>(client => HttpClientInitializer.Initialize());
+            services.AddTransient<IEncrypter, Hashing>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +53,7 @@ namespace SaveTimeCore.Web.Admin
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Admin}/{action=SignUp}/{id?}");
+                    pattern: "{controller=Account}/{action=SignIn}/{id?}");
             });
         }
     }

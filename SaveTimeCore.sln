@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveTimeCore.Services", "Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveTimeCore.Domain", "SaveTimeCore.Domain\SaveTimeCore.Domain.csproj", "{74BFBE4E-5EBC-44C5-A6AD-507BE30BD473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveTimeCore.Web.Admin", "SaveTimeCore.Web.Admin\SaveTimeCore.Web.Admin.csproj", "{501D10D6-51A5-4110-BAEF-7B7EEA5507EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveTimeCore.Web.Admin", "SaveTimeCore.Web.Admin\SaveTimeCore.Web.Admin.csproj", "{C9A7BF61-E0EA-46ED-944F-5E5120945D22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{74BFBE4E-5EBC-44C5-A6AD-507BE30BD473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74BFBE4E-5EBC-44C5-A6AD-507BE30BD473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74BFBE4E-5EBC-44C5-A6AD-507BE30BD473}.Release|Any CPU.Build.0 = Release|Any CPU
-		{501D10D6-51A5-4110-BAEF-7B7EEA5507EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{501D10D6-51A5-4110-BAEF-7B7EEA5507EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{501D10D6-51A5-4110-BAEF-7B7EEA5507EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{501D10D6-51A5-4110-BAEF-7B7EEA5507EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A7BF61-E0EA-46ED-944F-5E5120945D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A7BF61-E0EA-46ED-944F-5E5120945D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A7BF61-E0EA-46ED-944F-5E5120945D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A7BF61-E0EA-46ED-944F-5E5120945D22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
