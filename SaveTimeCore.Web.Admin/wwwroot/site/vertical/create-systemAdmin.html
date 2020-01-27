@@ -304,9 +304,9 @@
                     </h3>
 
                     <div class="p-3">
-                        <h4 class="text-muted font-18 m-b-5 text-center">Create Company</h4>
+                        <h4 class="text-muted font-18 m-b-5 text-center">Create Barber</h4>
 
-                        <form class="form-horizontal m-t-30" action="/Company/Create" method="post">
+                        <form class="form-horizontal m-t-30" action="/SystemAdmin/Create" method="post">
 
                             <div class="form-group">
                                 <label for="name">Name</label>
@@ -314,8 +314,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="city">City</label>
-                                <input name="City" type="text" class="form-control" id="city" placeholder="Enter city">
+                                <label for="accountId">Account</label>
+                                <select name="AccountId" class="form-control" id="accountId">
+                                </select>
                             </div>
 
                             <div class="form-group row m-t-20">
@@ -362,6 +363,7 @@
     <!-- App js -->
     <script src="assets/js/app.js"></script>
 
+    <script src="assets/js/create-systemAdmin.js"></script>
 </body>
 
 </html>

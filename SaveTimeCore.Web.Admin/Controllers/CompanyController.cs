@@ -34,5 +34,11 @@ namespace SaveTimeCore.Web.Admin.Controllers
 
             return Redirect("/site/vertical/create-company.html");
         }
+        public IActionResult Delete(int id)
+        {
+            var result = _client.DeleteAsync("api/companies/" + id).Result;
+
+            return Redirect("/site/vertical/table-company.html");
+        }
     }
 }

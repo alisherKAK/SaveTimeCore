@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SaveTimeCore.AbstractModels;
@@ -21,6 +19,12 @@ namespace SaveTimeCore.Web.Admin.Controllers
             _encrypter = encrypter;
         }
         
+        public string GetAll()
+        {
+            var result = _client.GetStringAsync("api/accounts").Result;
+
+            return result;
+        }
         public IActionResult SignIn()
         {
             return Redirect("/site/vertical/pages-login.html");

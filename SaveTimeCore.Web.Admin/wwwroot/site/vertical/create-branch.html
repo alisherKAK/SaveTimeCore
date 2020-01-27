@@ -304,18 +304,40 @@
                     </h3>
 
                     <div class="p-3">
-                        <h4 class="text-muted font-18 m-b-5 text-center">Create Company</h4>
+                        <h4 class="text-muted font-18 m-b-5 text-center">Create Branch</h4>
 
-                        <form class="form-horizontal m-t-30" action="/Company/Create" method="post">
+                        <form class="form-horizontal m-t-30" action="/Branch/Create" method="post">
 
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input name="Name" type="text" class="form-control" id="name" placeholder="Enter name">
+                                <label for="address">Address</label>
+                                <input name="Address" type="text" class="form-control" id="address" placeholder="Enter address">
                             </div>
 
                             <div class="form-group">
-                                <label for="city">City</label>
-                                <input name="City" type="text" class="form-control" id="city" placeholder="Enter city">
+                                <label for="phone">Phone</label>
+                                <input name="Phone" type="tel" class="form-control" id="phone" placeholder="Enter phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="Email" type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="startWork">Start work</label>
+                                <input name="StartWork" type="time" class="form-control" id="startWork" placeholder="Enter start work time">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="endWork">End work</label>
+                                <input name="EndWork" type="time" class="form-control" id="endWork" placeholder="Enter end work time">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companId">Company</label>
+                                <select name="CompanyId" class="form-control" id="companyId">
+                                    
+                                </select>
                             </div>
 
                             <div class="form-group row m-t-20">
@@ -362,6 +384,7 @@
     <!-- App js -->
     <script src="assets/js/app.js"></script>
 
+    <script src="assets/js/create-branch.js"></script>
 </body>
 
 </html>

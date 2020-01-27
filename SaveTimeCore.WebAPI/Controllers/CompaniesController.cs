@@ -58,8 +58,8 @@ namespace SaveTimeCore.WebAPI.Controllers
 
             return Ok();
         }
-        [HttpDelete]
-        public IActionResult Delet(int id)
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
         {
             _service.Delete(id);
             return Ok();

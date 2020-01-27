@@ -7,6 +7,7 @@
         tr += "<td>" + data[i].email + "</td>";
         tr += "<td>" + data[i].startWork + "</td>";
         tr += "<td>" + data[i].endWork + "</td>";
+        tr += '<td><a class="btn btn-primary waves-effect waves-light" href="/Branch/Delete/' + data[i].id + '" role="button">Delete</a></td>';
         tr += "</tr>";
 
         $("#datatable tbody").append(tr);

@@ -6,7 +6,14 @@
  */
 $("#menu-table").append('<li><a href="table-company.html">Company Table</a></li>');
 $("#menu-table").append('<li><a href="table-branch.html">Branch Table</a></li>');
+$("#menu-table").append('<li><a href="table-barber.html">Barber Table</a></li>');
+$("#menu-table").append('<li><a href="table-systemAdmin.html">System Admin Table</a></li>');
+$("#menu-table").append('<li><a href="table-service.html">Service Table</a></li>');
 $("div[aria-labelledby=dropdownMenuLink]").append('<a class="dropdown-item" href="create-company.html">Create Company</a>');
+$("div[aria-labelledby=dropdownMenuLink]").append('<a class="dropdown-item" href="create-branch.html">Create Branch</a>');
+$("div[aria-labelledby=dropdownMenuLink]").append('<a class="dropdown-item" href="create-barber.html">Create Barber</a>');
+$("div[aria-labelledby=dropdownMenuLink]").append('<a class="dropdown-item" href="create-systemAdmin.html">Create System Admin</a>');
+$("div[aria-labelledby=dropdownMenuLink]").append('<a class="dropdown-item" href="create-service.html">Create Service</a>');
 
 function load_js(src) {
     var head = document.getElementsByTagName('head')[0];
