@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -21,6 +22,9 @@ namespace SaveTimeCore.Web.Admin
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseKestrel();
+                    webBuilder.UseIISIntegration();
+                    webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
                 });
     }
 }

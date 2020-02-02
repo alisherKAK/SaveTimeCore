@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -39,6 +40,15 @@ namespace SaveTimeCore.Web.Client.Controllers
                 Email = clientCreateViewModel.Email,
                 Password = clientCreateViewModel.Password
             };
+
+            var jsonResponse = _client.GetStringAsync("api/accounts").Result;
+            var oldAccounts = JsonConvert.DeserializeObject<List<AccountResource>>(jsonResponse);
+
+            if(oldAccounts.Any(account => account.Login == clientCreateViewModel.Login))
+            {
+                return Redirect("/site/vertical/pages-register.html");
+            }
+
             var json = JsonConvert.SerializeObject(account);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
             var result = _client.PostAsync("api/accounts", data).Result;
@@ -83,8 +93,15 @@ namespace SaveTimeCore.Web.Client.Controllers
 
             if(_encrypter.ValidatePassword(clientEnterViewModel.Password, account.Password))
             {
-                Response.Cookies.Append("clientId", client.Id.ToString());
-                return Redirect("/site/vertical/index.html");
+                try
+                {
+                    Response.Cookies.Append("clientId", client.Id.ToString());
+                    return Redirect("/site/vertical/index.html");
+                }
+                catch(Exception)
+                {
+                    return Redirect("/site/vertical/pages-login.html");
+                }
             }
 
             return Redirect("/site/vertical/pages-login.html");

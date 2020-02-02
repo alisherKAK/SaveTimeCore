@@ -43,7 +43,7 @@ namespace SaveTimeCore.Web.Admin.Controllers
             
             if(_encrypter.ValidatePassword(accountSignInViewModel.Password, account.Password))
             {
-                return Redirect("/site/vertical/index.html");
+                return Redirect("/site/vertical/table-company.html");
             }
 
             return Redirect("/site/vertical/pages-login.html");
