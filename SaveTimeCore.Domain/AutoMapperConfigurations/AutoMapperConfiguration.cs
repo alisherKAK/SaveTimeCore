@@ -9,12 +9,8 @@ namespace SaveTimeCore.Domain.AutoMapperConfigurations
         {
             return new MapperConfiguration(c =>
             {
-                c.AddProfile<CompanyProfile>();
-                c.AddProfile<BranchProfile>();
                 c.AddProfile<BarberProfile>();
-                c.AddProfile<SystemAdminProfile>();
                 c.AddProfile<AccountProfile>();
-                c.AddProfile<ServiceProfile>();
                 c.AddProfile<ClientProfile>();
                 c.AddProfile<RecordProfile>();
             }).CreateMapper();

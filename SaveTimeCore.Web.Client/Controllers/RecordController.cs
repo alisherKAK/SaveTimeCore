@@ -2,7 +2,6 @@
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SaveTimeCore.DataModels.Enums;
 using SaveTimeCore.Web.Client.Models;
 
 namespace SaveTimeCore.Web.Client.Controllers
@@ -30,7 +29,6 @@ namespace SaveTimeCore.Web.Client.Controllers
                 recordCreateViewModel.ClientId = int.Parse(clientId);
             }
 
-            recordCreateViewModel.Status = (int)RecordStatus.Waiting;
             var json = JsonConvert.SerializeObject(recordCreateViewModel);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
             var result = _client.PostAsync("api/records", data).Result;

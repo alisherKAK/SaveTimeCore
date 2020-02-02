@@ -9,6 +9,5 @@ namespace SaveTimeCore.Domain.DTOs
         public int ClientId { get; set; }
         public DateTime BookingTime { get; set; }
         public double SpendTime { get; set; }
-        public int Status { get; set; }
     }
 }
